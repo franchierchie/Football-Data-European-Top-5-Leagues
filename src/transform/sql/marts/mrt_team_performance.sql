@@ -9,7 +9,7 @@ JOIN (
   SELECT team_id,
     SUM(home_goals + away_goals) AS goals_scored,
     SUM(home_conceded + away_conceded) AS goals_conceded,
-    (home_goals + away_goals) - (home_conceded + away_conceded) AS goal_difference
+    SUM(home_goals + away_goals) - SUM(home_conceded + away_conceded) AS goal_difference
   FROM (
     SELECT home_team_id AS team_id,
       full_time_home AS home_goals,
@@ -39,5 +39,4 @@ JOIN (
       ) AS sc ON m.match_id = sc.match_id
     )
   ) GROUP BY team_id
-) as gs_gc ON t.team_id = gs_gc.team_id
-LIMIT 10;
+) as gs_gc ON t.team_id = gs_gc.team_id;

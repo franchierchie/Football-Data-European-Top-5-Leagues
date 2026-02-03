@@ -4,3 +4,5 @@ WAREHOUSE_DB_FOLDER_PATH = 'data/warehouse/'
 
 SQL_STAGING_FILES_PATH = 'src/transform/sql/staging/'
 SQL_MARTS_FILES_PATH = 'src/transform/sql/marts/'
+
+MART_PATH = 'src/transform/sql/marts/'

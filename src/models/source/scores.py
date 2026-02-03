@@ -1,13 +1,17 @@
 TABLE = "scores"
 
-REQUIRED_COLUMNS = {
-  "match_id": "TEXT",
-  "full_time_home": "INTEGER",
-  "full_time_away": "INTEGER"
-}
+EXPECTED_COLUMNS = [
+  "score_id",
+  "match_id",
+  "full_time_home",
+  "full_time_away",
+  "half_time_home",
+  "half_time_away"
+]
 
-OPTIONAL_COLUMNS = {
-  "score_id": "TEXT",
-  "half_time_home": "INTEGER",
-  "half_time_away": "INTEGER"
-}
+INTEGER_COLUMNS = [
+  "full_time_home",
+  "full_time_away",
+  "half_time_home",
+  "half_time_away"
+]

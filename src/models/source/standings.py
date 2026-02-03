@@ -1,21 +1,30 @@
 TABLE = "standings"
 
-REQUIRED_COLUMNS = {
-  "league_id": "TEXT",
-  "position": "INTEGER",
-  "team_id": "TEXT",
-  "played_games": "INTEGER",
-  "won": "INTEGER",
-  "draw": "INTEGER",
-  "lost": "INTEGER",
-  "points": "INTEGER"
-}
+EXPECTED_COLUMNS = [
+  "standing_id",
+  "season_id",
+  "league_id",
+  "position",
+  "team_id",
+  "played_games",
+  "won",
+  "draw",
+  "lost",
+  "points",
+  "goals_for",
+  "goals_against",
+  "goal_difference",
+  "form",
+]
 
-OPTIONAL_COLUMNS = {
-  "standing_id": "TEXT",
-  "season_id": "TEXT",
-  "goals_for": "INTEGER",
-  "goals_against": "INTEGER",
-  "goals_difference": "INTEGER",
-  "form": "TEXT"
-}
+INTEGER_COLUMNS = [
+  "position",
+  "played_games",
+  "won",
+  "draw",
+  "lost",
+  "points",
+  "goals_for",
+  "goals_against",
+  "goal_difference",
+]

@@ -1,14 +1,11 @@
 TABLE = "teams"
 
-REQUIRED_COLUMNS = {
-  "team_id": "TEXT",
-  "name": "TEXT",
-  "league_id": "TEXT"
-}
-
-OPTIONAL_COLUMNS = {
-  "founded_year": "INTEGER",
-  "stadium_id": "TEXT",
-  "coach_id": "TEXT",
-  "cresturl": "TEXT"
-}
+EXPECTED_COLUMNS = [
+  "team_id",
+  "name",
+  "founded_year",
+  "stadium_id",
+  "league_id",
+  "coach_id",
+  "cresturl",
+]
